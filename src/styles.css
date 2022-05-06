@@ -10,5 +10,8 @@ body {
 }
 
 .nav-wrapper {
-    border: 1px solid red;
+    height: 70px;
+    display: flex;
+    padding: 20px 36px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
