@@ -12,6 +12,30 @@ body {
 .nav-wrapper {
     height: 70px;
     display: flex;
-    padding: 20px 36px;
+    padding: 20px 136px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.logo-img{ 
+    max-width: 100px;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 50px 136px;
+
+}
+
+.hero-img {
+    max-width: 620px;
+    align-self: center;
+}
+.hero-body {
+    justify-self: flex-start;
+}
+
+.hero-title {
+    width: 70%;
 }
