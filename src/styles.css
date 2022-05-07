@@ -9,6 +9,14 @@ body {
     font-family: Poppins, sans-serif;
 }
 
+.gray {
+    color: #918E9B;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 .nav-wrapper {
     height: 70px;
     display: flex;
@@ -38,4 +46,25 @@ body {
 
 .hero-title {
     width: 70%;
+}
+
+
+.card {
+    width: 175px;
+    font-size: 12px;
+    margin: 20px;
+}
+
+.card--image {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+}
+
+.card--star {
+    height: 14px;
 }
