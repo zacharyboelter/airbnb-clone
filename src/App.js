@@ -16,6 +16,7 @@ export default function App() {
                 country="Netherlands"
                 title="Life Lessons with Katie Zaferes"
                 price={136}
+                isAvailiable = {true}
                 
             />
         </>
