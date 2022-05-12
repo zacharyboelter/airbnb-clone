@@ -17,6 +17,7 @@ export default function App() {
                 title="Life Lessons with Katie Zaferes"
                 price={136}
                 isAvailiable = {true}
+                hasPromoCade = {false}
                 
             />
         </>
