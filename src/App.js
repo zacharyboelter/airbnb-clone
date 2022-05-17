@@ -7,14 +7,14 @@ import data from "./data"
 
 export default function App(e) {
     console.log(data)
-    const dataElement = data.map(e => {
+    const cards = data.map(item => {
         return <Card 
-            img={e.coverImg}
-            rating={e.stats.rating}
-            reviewCount={e.stats.reviewCount}
-            location={e.location}
-            title={e.title}
-            price={e.price}
+            img={item.coverImg}
+            rating={item.stats.rating}
+            reviewCount={item.stats.reviewCount}
+            location={item.location}
+            title={item.title}
+            price={item.price}
         />
     })
             // <Hero />
@@ -22,7 +22,9 @@ export default function App(e) {
         <div>
             <Navbar />
             <Hero />
-            {dataElement}
+            <section className="cards-list">
+                {cards}
+            </section>
         </div>
     )
 }
