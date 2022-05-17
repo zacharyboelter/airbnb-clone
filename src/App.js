@@ -1,29 +1,31 @@
-import React from "react";
+import React from "react"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
+import data from "./data"
 
 
-export default function App() {
+export default function App(e) {
+    console.log(data)
+    const dataElement = data.map(e => {
+        return <Card 
+            img={e.coverImg}
+            rating={e.stats.rating}
+            reviewCount={e.stats.reviewCount}
+            location={e.location}
+            title={e.title}
+            price={e.price}
+        />
+    })
+            // <Hero />
     return (
-        <>
+        <div>
             <Navbar />
             <Hero />
-            <Card 
-                img="zaferes.png"
-                rating="5.0"
-                reviewCount={6}
-                country="Netherlands"
-                title="Life Lessons with Katie Zaferes"
-                price={136}
-                isAvailiable = {true}
-                hasPromoCade = {false}
-                
-            />
-        </>
+            {dataElement}
+        </div>
     )
 }
-
 
 
 // import React from "react"
