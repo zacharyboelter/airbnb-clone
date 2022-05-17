@@ -2,9 +2,9 @@ import React from "react"
 
 export default function Card(props) {
     let badgeText
-    if (props.openSpots === 0) {
+    if (props.item.openSpots === 0) {
         badgeText = "SOLD OUT"
-    } else if (props.location == "Online") {
+    } else if (props.item.location == "Online") {
         badgeText = "ONLINE"
     }
     return (
@@ -17,8 +17,8 @@ export default function Card(props) {
                 <span className="gray">({props.item.stats.reviewCount}) • </span>
                 <span className="gray">{props.item.location}</span>
             </div>
-            <p>{props.item.title}</p>
-            <p><span className="bold">From ${props.item.price}</span> / person</p>
+            <p className="card--title">{props.item.title}</p>
+            <p className="card--price"><span className="bold">From ${props.item.price}</span> / person</p>
         </div>
     )
 }
